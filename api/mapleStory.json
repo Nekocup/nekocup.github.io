@@ -4,55 +4,73 @@
             "id": 1,
             "name": "輪迴",
             "price": 15000,
-            "class": "飾品"
+            "class": "飾品",
+            "description": "含有古代異星力量的巨型石板。使用時，就能使用輪迴技能。",
+            "image": "https://i.imgur.com/T1xAF4Y.png"
         },
         {
             "id": 2,
-            "name": "燃燒之s戒",
+            "name": "燃燒之戒",
             "price": 8000,
-            "class": "飾品"
+            "class": "飾品",
+            "description": "使用技能時，可提升目前地圖的燃燒階段。",
+            "image": "https://i.imgur.com/YuIcEGw.png"
         },
         {
             "id": 3,
             "name": "武公的靈魂寶珠",
             "price": 4300,
-            "class": "雜貨"
+            "class": "雜貨",
+            "description": "裝有武公魂的寶珠。使用在有使用魂之卷軸的武器上話，武公的潛藏的力量就會被開放出來。成功機率100%"
+            "image": "https://i.imgur.com/5gKnuO3.png"
         },
         {
             "id": 4,
             "name": "歡樂指環",
             "price": 800,
-            "class": "飾品"
+            "class": "飾品",
+            "description": "全職業都可以使用的歡樂指環，可透過專屬卷軸創造出自己想要的能力屬性，祝你好運。",
+            "image": "https://i.imgur.com/fo19BTJ.png"
         },
         {
             "id": 5,
             "name": "口紅控制器標誌",
             "price": 1500,
-            "class": "飾品"
+            "class": "飾品",
+            "description": "無",
+            "image": "https://i.imgur.com/5gKnuO3.png"
         },
         {
             "id": 6,
             "name": "附有魔力的眼罩",
             "price": 1500,
-            "class": "飾品"
+            "class": "飾品",
+            "description": "無",
+            "image": "https://i.imgur.com/40m2q8N.png"
         },
         {
             "id": 7,
             "name": "艾畢奈亞的靈魂寶珠",
             "price": 30,
-            "class": "雜貨"
+            "class": "雜貨",
+            "description": "裝有艾畢奈亞魂的寶珠。使用在有使用魂之卷軸的武器上話，艾畢奈亞的潛藏的力量就會被開放出來。成功機率100%",
+            "image": "https://i.imgur.com/PZj35wV.png"
         },
         {
             "id": 8,
             "name": "梅格耐斯的靈魂寶珠",
             "price": 10,
-            "class": "雜貨"
+            "class": "雜貨",
+            "description": "裝有梅格耐斯魂的寶珠。使用在有使用魂之卷軸的武器上話，梅格耐斯的潛藏的力量就會被開放出來。成功機率100%",
+            "image": "https://i.imgur.com/M5bemQz.png"
         },
         {
             "id": 9,
             "name": "幽暗戒指",
             "price": 2100,
-            "class": "飾品"
+            "class": "飾品",
+            "description": "封印著幽冥氣息的戒指。裝備時，可使用技能幽暗抱擁",
+            "image": "https://i.imgur.com/vcS7wRR.png"
         }
     ]
 }

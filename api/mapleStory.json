@@ -6,7 +6,8 @@
             "price": 15000,
             "class": "飾品",
             "description": "含有古代異星力量的巨型石板。使用時，就能使用輪迴技能。",
-            "image": "https://i.imgur.com/T1xAF4Y.png"
+            "image": "https://i.imgur.com/T1xAF4Y.png",
+            "hot": true
         },
         {
             "id": 2,
@@ -14,7 +15,8 @@
             "price": 8000,
             "class": "飾品",
             "description": "使用技能時，可提升目前地圖的燃燒階段。",
-            "image": "https://i.imgur.com/YuIcEGw.png"
+            "image": "https://i.imgur.com/YuIcEGw.png",
+            "hot": true
         },
         {
             "id": 3,
@@ -22,7 +24,8 @@
             "price": 4300,
             "class": "雜貨",
             "description": "裝有武公魂的寶珠。使用在有使用魂之卷軸的武器上話，武公的潛藏的力量就會被開放出來。成功機率100%",
-            "image": "https://i.imgur.com/5gKnuO3.png"
+            "image": "https://i.imgur.com/5gKnuO3.png",
+            "hot": true
         },
         {
             "id": 4,
@@ -30,7 +33,8 @@
             "price": 800,
             "class": "飾品",
             "description": "全職業都可以使用的歡樂指環，可透過專屬卷軸創造出自己想要的能力屬性，祝你好運。",
-            "image": "https://i.imgur.com/fo19BTJ.png"
+            "image": "https://i.imgur.com/fo19BTJ.png",
+            "hot": false
         },
         {
             "id": 5,
@@ -38,7 +42,8 @@
             "price": 1500,
             "class": "飾品",
             "description": "無",
-            "image": "https://i.imgur.com/5gKnuO3.png"
+            "image": "https://i.imgur.com/5gKnuO3.png",
+            "hot": false
         },
         {
             "id": 6,
@@ -46,7 +51,8 @@
             "price": 1500,
             "class": "飾品",
             "description": "無",
-            "image": "https://i.imgur.com/40m2q8N.png"
+            "image": "https://i.imgur.com/40m2q8N.png",
+            "hot": false
         },
         {
             "id": 7,
@@ -54,7 +60,8 @@
             "price": 30,
             "class": "雜貨",
             "description": "裝有艾畢奈亞魂的寶珠。使用在有使用魂之卷軸的武器上話，艾畢奈亞的潛藏的力量就會被開放出來。成功機率100%",
-            "image": "https://i.imgur.com/PZj35wV.png"
+            "image": "https://i.imgur.com/PZj35wV.png",
+            "hot": false
         },
         {
             "id": 8,
@@ -62,7 +69,8 @@
             "price": 10,
             "class": "雜貨",
             "description": "裝有梅格耐斯魂的寶珠。使用在有使用魂之卷軸的武器上話，梅格耐斯的潛藏的力量就會被開放出來。成功機率100%",
-            "image": "https://i.imgur.com/M5bemQz.png"
+            "image": "https://i.imgur.com/M5bemQz.png",
+            "hot": false
         },
         {
             "id": 9,
@@ -70,7 +78,45 @@
             "price": 2100,
             "class": "飾品",
             "description": "封印著幽冥氣息的戒指。裝備時，可使用技能幽暗抱擁",
-            "image": "https://i.imgur.com/vcS7wRR.png"
-        }
+            "image": "https://i.imgur.com/vcS7wRR.png",
+            "hot": false
+        },
+        {
+            "id": 10,
+            "name": "鬆軟兔兔帽T",
+            "price": 510,
+            "class": "防具",
+            "description": "鬆軟兔兔帽T，由中國楓之谷玩家pipi所設計。",
+            "image": "https://i.imgur.com/X8qFVc6.png",
+            "hot": false
+        },
+        {
+            "id": 11,
+            "name": "鬆軟兔兔套服",
+            "price": 600,
+            "class": "防具",
+            "description": "鬆軟兔兔帽T，由中國楓之谷玩家pipi所設計。",
+            "image": "https://i.imgur.com/Os1SLzu.png",
+            "hot": false
+        },
+        {
+            "id": 12,
+            "name": "紅武士之袍",
+            "price": 372,
+            "class": "防具",
+            "description": "紅武士之袍，由中國楓之谷玩家waqiuxiaozhe所設計。",
+            "image": "https://i.imgur.com/Tb94MSw.png",
+            "hot": false
+        },
+        {
+            "id": 13,
+            "name": "親愛的腳環",
+            "price": 666,
+            "class": "防具",
+            "description": "叮叮噹！。由中國楓之谷玩家Criceto進行設計。",
+            "image": "https://i.imgur.com/wezEH05.png",
+            "hot": false
+        },
+        
     ]
 }

@@ -13,6 +13,12 @@
         <p>網站更新時間 : 2021/07/05 24:17</p>
     </div>
     <div id="app">
+        <div :class="{loading:isNload}">
+            <div class="loadIcon">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
         <div class="headshot">
             <img src="https://pbs.twimg.com/profile_images/1246500828086591488/2Ca0l8Aw_200x200.jpg" alt="">
             <div class="Introduction">
@@ -57,6 +63,12 @@
     new Vue({
         el:"#app",
         data:{
+            isNload:true
+        },
+        mounted() {
+            window.onload = ()=>{
+                this.isNload = false
+            }
         },
     })
 
@@ -64,7 +76,44 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap');
 
-
+    .loading {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        background-color: rgba(0,0,0,.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loadIcon {
+        transform-origin: bottom center;
+        animation: rotate 3s linear infinite;
+    }
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(228, 135, 29);
+        display: inline-block;
+        transform: scale(0);
+        animation: grow 1.5s linear infinite;
+    }
+    @keyframes grow {
+        50% {
+            transform: scale(1);
+        }
+    }
+    .circle:nth-child(2) {
+        background-color: rgb(77, 77, 224);
+        animation: grow 1.5s linear infinite .3s;
+    }
     body {
         background-color: #B9887D;
         background-image: url("https://nipponcolors.com/images/texture.png");     

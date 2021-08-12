@@ -32,9 +32,49 @@
                 </div>
             </div>
         </div>
-        <div class="playGame">
-            <h1>PlayGame</h1>
-            <div class="gameBox">
+        <div class="skill listLayout">
+            <h1 class="Title">Skill</h1>
+            <div class="skillBox">
+                <div>
+                <h2>Front End</h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>SCSS</li>
+                    <ul>
+                        <li>熟悉如何製作響應式網頁</li>
+                    </ul>
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <ul>
+                        <li>會使用 Vue CLI</li>
+                        </ul>
+                </ul>                    
+                </div>
+                <div>
+                    <h2>Back End</h2>
+                    <ul>
+                        <li>NodeJs</li>
+                        <li>MySQL ( 基礎 )
+                            <ul>
+                                <li>了解關聯式資料庫</li>
+                                <li>基礎的創立資料表、寫入資料</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Others</h2>
+                    <ul>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>以下為個人興趣...</p>
+        <hr>
+        <div class="playGame listLayout">
+            <h1 @click="gameBoxHiddenToggle" class="Title">{{ PlayGame.msg }}</h1>
+            <div class="gameBox" :class="{gameBoxHidden:PlayGame.gameBoxHidden}">
                 <div>
                     <h3>MapleStroy</h3>
                     <img src="https://i.imgur.com/yqA3cWE.png" alt="">
@@ -63,11 +103,25 @@
     new Vue({
         el:"#app",
         data:{
-            isNload:true
+            isNload:true,
+            PlayGame: {
+                msg: "PlayGame ↓",
+                gameBoxHidden:true
+            }
         },
         mounted() {
             window.onload = ()=>{
                 this.isNload = false
+            }
+        },
+        methods: {
+            gameBoxHiddenToggle() {
+                this.PlayGame.gameBoxHidden = !this.PlayGame.gameBoxHidden
+                if(this.PlayGame.gameBoxHidden){
+                    this.PlayGame.msg = "PlayGame ↓"
+                }else {
+                    this.PlayGame.msg = "PlayGame ↑"
+                }
             }
         },
     })
@@ -143,8 +197,9 @@
         text-align: center;
         color: #E0E0E0;
         width: 50%;
-        max-width: 600px;
+        max-width: 750px;
         margin: auto;
+        font-size: 24px;
     }
     .headshot {
         padding: 2vh 0;
@@ -156,9 +211,9 @@
         border-radius: 50%;
         margin-bottom: 10px;
     }
-    .playGame {
+    .listLayout {
         padding: 2vh 40px;
-        margin-top: 10px;
+        margin-top: 10px;        
     }
     .gameBox {
         display: flex;
@@ -188,15 +243,29 @@
         max-width: 400px;
         margin: auto;
     }
+    .gameBoxHidden {
+        display: none;
+    }
+    .skillBox div {
+        margin: 1em;
+        box-sizing: border-box;
+        width: 100%;
+    }
     @media screen and (min-width:768px){
         .gameBox div {
         width: 48%;
+        }
+        .skillBox div {
+            width: 47%;
         }
     }
     @media screen and (min-width:1200px){
         .gameBox div {
         width: 32%;
-    }
+        }
+        .skillBox div {
+            width: 30.997%;
+        }
     }
     .updateTime {
         position: absolute;
@@ -205,6 +274,22 @@
     .updateTime p{
         font-size: 10px;
         color: black;
+    }
+    .Title {
+        border-radius: 15px;
+        padding: 0 .2em;
+        margin: .5em 0;
+    }
+    .playGame .Title:hover {
+        background-color: rgb(134, 87, 134);
+    }
+    .skillBox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .skillBox div ul {
+        padding: 1em 2em;
     }
 </style>
 </html>

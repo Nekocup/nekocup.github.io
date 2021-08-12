@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Profile</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
+
 <body>
 
     <div class="updateTime">
@@ -25,7 +27,7 @@
                 <h1>Profile</h1>
                 <p>Name : 丁元凱</p>
                 <p>Nickname : Ding Ding</p>
-                <p>1999/12/29 。 Taiwan</p>  
+                <p>1999/12/29 。 Taiwan</p>
 
                 <div class="Information">
                     <p>大學期間誤打誤撞接觸了前端，本身就很喜歡玩電腦，對這方面很感興趣，畢業後也想繼續往這個方向延伸，目前的學習方式都是以自學為主，希望往後能學習更多相關的技術和解決問題的方法。</p>
@@ -36,20 +38,20 @@
             <h1 class="Title">Skill</h1>
             <div class="skillBox">
                 <div>
-                <h2>Front End</h2>
-                <ul>
-                    <li>HTML / CSS</li>
-                    <li>SCSS</li>
+                    <h2>Front End</h2>
                     <ul>
-                        <li>RWD 響應式網頁規劃</li>
+                        <li>HTML / CSS</li>
+                        <li>SCSS</li>
+                        <ul>
+                            <li>RWD 響應式網頁規劃</li>
+                        </ul>
+                        <li>JavaScript</li>
+                        <ul>
+                            <li>熟悉基本語法，了解 ES6 標準</li>
+                            <li>串接第三方 API</li>
+                        </ul>
+                        <li>Vue.js</li>
                     </ul>
-                    <li>JavaScript</li>
-                    <ul>
-                        <li>熟悉基本語法，了解 ES6 標準</li>
-                        <li>串接第三方 API</li>
-                    </ul>
-                    <li>Vue.js</li>
-                </ul>                    
                 </div>
                 <div>
                     <h2>Back End</h2>
@@ -92,7 +94,7 @@
                 <div>
                     <h3>League of Legends</h3>
                     <img src="https://i.imgur.com/H8VXtxn.png" alt="">
-                    <p>遊戲名稱 : 有臉丁丁</p> 
+                    <p>遊戲名稱 : 有臉丁丁</p>
                     <p>老了，歡迎加好友一起玩</p>
                 </div>
             </div>
@@ -102,25 +104,25 @@
 <script>
 
     new Vue({
-        el:"#app",
-        data:{
-            isNload:true,
+        el: "#app",
+        data: {
+            isNload: true,
             PlayGame: {
                 msg: "PlayGame ↓",
-                gameBoxHidden:true
+                gameBoxHidden: true
             }
         },
         mounted() {
-            window.onload = ()=>{
+            window.onload = () => {
                 this.isNload = false
             }
         },
         methods: {
             gameBoxHiddenToggle() {
                 this.PlayGame.gameBoxHidden = !this.PlayGame.gameBoxHidden
-                if(this.PlayGame.gameBoxHidden){
+                if (this.PlayGame.gameBoxHidden) {
                     this.PlayGame.msg = "PlayGame ↓"
-                }else {
+                } else {
                     this.PlayGame.msg = "PlayGame ↑"
                 }
             }
@@ -129,31 +131,35 @@
 
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap');
 
     .loading {
         width: 100%;
         height: 100%;
         position: fixed;
-        top:0;
+        top: 0;
         left: 0;
-        background-color: rgba(0,0,0,.7);
+        background-color: rgba(0, 0, 0, .7);
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .loadingHidden {
         display: none;
     }
+
     .loadIcon {
         transform-origin: bottom center;
         animation: rotate 3s linear infinite;
     }
+
     @keyframes rotate {
         to {
             transform: rotate(360deg);
         }
     }
+
     .circle {
         width: 30px;
         height: 30px;
@@ -163,38 +169,46 @@
         transform: scale(0);
         animation: grow 1.5s linear infinite;
     }
+
     @keyframes grow {
         50% {
             transform: scale(1);
         }
     }
+
     .circle:nth-child(2) {
         background-color: rgb(77, 77, 224);
         animation: grow 1.5s linear infinite .3s;
     }
+
     body {
         background-color: #B9887D;
-        background-image: url("https://nipponcolors.com/images/texture.png");     
-        min-height: 100vh;   
-        padding: 10px;         
+        background-image: url("https://nipponcolors.com/images/texture.png");
+        min-height: 100vh;
+        padding: 10px;
     }
+
     * {
         margin: 0;
         padding: 0;
-        font-family: Papyrus,'Noto Sans TC', sans-serif;
+        font-family: Papyrus, 'Noto Sans TC', sans-serif;
         color: white;
-    } 
+    }
+
     #app {
         max-width: 1450px;
         margin: auto;
     }
+
     .Introduction h1 {
         padding-bottom: 10px;
     }
+
     .Information {
         margin-top: 50px;
     }
-    .Information p{
+
+    .Information p {
         text-align: center;
         color: #E0E0E0;
         width: 50%;
@@ -202,39 +216,47 @@
         margin: auto;
         font-size: 24px;
     }
+
     .headshot {
         padding: 2vh 0;
         width: 100%;
         text-align: center;
         border-radius: 20px;
-    } 
-    .headshot img{
+    }
+
+    .headshot img {
         border-radius: 50%;
         margin-bottom: 10px;
     }
+
     .listLayout {
         padding: 2vh 40px;
-        margin-top: 10px;        
+        margin-top: 10px;
     }
+
     .gameBox {
         display: flex;
         flex-wrap: wrap;
     }
+
     .gameBox div {
         width: 100%;
-        background-color: rgba(192, 190, 190,.3);
+        background-color: rgba(192, 190, 190, .3);
         border-radius: 20px;
         box-sizing: border-box;
         padding: 5px;
         margin: 5px;
         transition: width 1s;
     }
-    .gameBox div h3{
+
+    .gameBox div h3 {
         padding: 10px;
     }
-    .gameBox div p{
+
+    .gameBox div p {
         padding: 1px 10px;
     }
+
     .gameBox img {
         box-sizing: border-box;
         padding: 20px;
@@ -244,52 +266,65 @@
         max-width: 400px;
         margin: auto;
     }
+
     .gameBoxHidden {
         display: none;
     }
+
     .skillBox div {
         margin: 1em;
         box-sizing: border-box;
         width: 100%;
     }
-    @media screen and (min-width:768px){
+
+    @media screen and (min-width:768px) {
         .gameBox div {
-        width: 48%;
+            width: 48%;
         }
+
         .skillBox div {
             width: 47%;
         }
     }
-    @media screen and (min-width:1200px){
+
+    @media screen and (min-width:1200px) {
         .gameBox div {
-        width: 32%;
+            width: 32%;
         }
+
         .skillBox div {
-            width: 30.997%;
+            width: 30.9%;
         }
     }
+
     .updateTime {
         position: absolute;
-        top:5px;
+        top: 5px;
     }
-    .updateTime p{
+
+    .updateTime p {
         font-size: 10px;
         color: black;
     }
+
     .Title {
         border-radius: 15px;
         padding: 0 .2em;
         margin: .5em 0;
     }
+
     .playGame .Title:hover {
         background-color: rgb(134, 87, 134);
     }
+
     .skillBox {
         display: flex;
         flex-wrap: wrap;
     }
+
     .skillBox div ul {
         padding: 1em 2em;
     }
 </style>
+
 </html>

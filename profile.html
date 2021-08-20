@@ -114,7 +114,10 @@
         },
         mounted() {
             window.onload = () => {
-                this.isNload = false
+                setTimeout(()=>{
+                    this.isNload = false
+
+                },1000)
             }
         },
         methods: {

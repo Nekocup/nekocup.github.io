@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: DFKai-sb, Microsoft JhengHei, PMingLiU;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 651px;
+  display: block;
+  margin: auto;
+}

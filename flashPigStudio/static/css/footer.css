@@ -1,0 +1,10 @@
+footer {
+  margin-top: 2em;
+  background-color: rgb(64, 68, 77);
+}
+
+footer p {
+  font-size: 14px;
+  color: white;
+  padding: 1em;
+}

@@ -1,0 +1,88 @@
+article h1 {
+  text-align: center;
+  padding-top: 1em;
+  color: #5296d6;
+}
+/* 提供服務 */
+.article p {
+  font-size: 16px;
+  color: rgb();
+}
+
+.service img {
+  display: block;
+  margin: auto;
+  width: 85%;
+  max-width: 430px;
+  border-radius: 10px;
+}
+.service ol {
+  margin: auto;
+  width: 80%;
+  padding: 1em;
+}
+.service ol li {
+  padding: 0.5em;
+}
+/* 聯絡我們 */
+.physicalstore {
+  padding-top: 2em;
+}
+.physicalstore div > img {
+  display: block;
+  margin: auto;
+  width: 85%;
+  max-width: 430px;
+  border-radius: 10px;
+}
+.physicalstore div:first-child {
+  margin: auto;
+}
+.physicalstore ul {
+  width: 80%;
+  margin: auto;
+  padding: 0.6em;
+  border-left: 3px solid black;
+}
+.physicalstore ul li {
+  list-style: none;
+  padding: 0.5em;
+}
+.physicalstore ul li img {
+  width: 100%;
+  max-width: 360px;
+}
+@media screen and (min-width: 768px) {
+  .service {
+    display: flex;
+  }
+  .physicalstore {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .physicalstore div {
+    width: 100%;
+  }
+  .service div:first-child {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .physicalstore > div:first-child {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .service div {
+    width: 100%;
+  }
+  article p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  article p {
+    font-size: 22px;
+  }
+}

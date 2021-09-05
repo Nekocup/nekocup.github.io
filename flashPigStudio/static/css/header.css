@@ -4,9 +4,13 @@
   font-family: DFKai-sb, Microsoft JhengHei, PMingLiU;
 }
 
+header {
+  background: linear-gradient(45deg, #efc7ed, #f6eeb0);
+}
 .banner img {
   width: 100%;
-  max-width: 651px;
+  max-width: 431px;
   display: block;
   margin: auto;
+  padding: 2em 0;
 }

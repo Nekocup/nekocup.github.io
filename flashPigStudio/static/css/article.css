@@ -31,7 +31,8 @@ article h1 {
 .physicalstore div > img {
   display: block;
   margin: auto;
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   border-radius: 10px;
 }
 .physicalstore div:first-child {

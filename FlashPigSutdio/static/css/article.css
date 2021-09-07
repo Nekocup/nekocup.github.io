@@ -1,17 +1,23 @@
 article {
   padding: 1em 0;
 }
+
 article h1 {
   text-align: center;
   padding-top: 1em;
   color: #5296d6;
 }
-/* 提供服務 */
-.article p {
-  font-size: 16px;
-  color: rgb();
+article li {
+  padding: 0.5em;
 }
-
+article span {
+  font-size: 16px;
+}
+/* 提供服務 */
+.articleCenterMaxWidth {
+  max-width: 1200px;
+  margin: auto;
+}
 .service img {
   display: block;
   margin: auto;
@@ -24,9 +30,7 @@ article h1 {
   width: 80%;
   padding: 1em;
 }
-.service ol li {
-  padding: 0.5em;
-}
+
 /* 聯絡我們 */
 .physicalstore div > img {
   display: block;
@@ -44,13 +48,70 @@ article h1 {
   padding: 0.6em;
   border-left: 3px solid black;
 }
-.physicalstore ul li {
-  list-style: none;
-  padding: 0.5em;
-}
 .physicalstore ul li img {
   width: 100%;
   max-width: 360px;
+}
+
+/* 報修單 */
+.repair {
+  padding: 1em;
+}
+.repair h1 {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+}
+.repair p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.repairForm {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  max-width: 360px;
+  padding: 45px;
+  margin: auto;
+}
+.repairForm input {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  margin: 0.8em 0;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: 0;
+  font-size: 14px;
+}
+.repairForm textarea {
+  box-sizing: border-box;
+  margin: 1em 0 0.2em 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  min-height: 100px;
+}
+.repairForm input[type="submit"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em;
+  margin: 1em 0;
+  background: #4683b2;
+  color: white;
+  border: 0;
+}
+.repairForm input[type="submit"]:hover {
+  background: #3b6f97;
+}
+.repairForm input[type="submit"]:active {
+  background: #4f96cc;
+}
+.instructions {
+  color: gray;
+  border: 1px solid gray;
+  padding: 1.1em;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .service {
@@ -75,14 +136,5 @@ article h1 {
   }
   .service div {
     width: 100%;
-  }
-  article p {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  article p {
-    font-size: 22px;
   }
 }

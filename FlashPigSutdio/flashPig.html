@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="google-site-verification" content="TuHoVne5VUOTz6Lmw7yGnjYmU2PJBcl0J7fhcKsbeZc" />
         <title>閃光豬電腦維修工作室 | 系統安裝 / 硬體修護 / 到府檢測 / 組裝升級|( 澎湖店 )</title>
         <meta name="description" content="大家好，這裡是閃光豬電腦維修工作室，桌機筆電快速維修檢測維修，測試電腦硬體問題及系統設置維護，協助零件配備升級等，目前全省皆可配合，詳細資訊歡迎來電洽詢。目前致力於澎湖馬公、湖西、白沙及西嶼地區電腦故障檢修服務。">
+        <link href="./static/css/all.css" rel="stylesheet">
+        <link href="./static/css/loading.css" rel="stylesheet">
         <link href="./static/css/header.css" rel="stylesheet">
         <link href="./static/css/article.css" rel="stylesheet">
         <link href="./static/css/footer.css" rel="stylesheet">
     </head>
-    
-    <!-- <script src="node_modules/vue/dist/vue.js"></script> -->
+
     <body>
         <div id="app">
             <header>
@@ -21,62 +21,119 @@
                 </div>
             </header>
             <main>
-            <article>
-                <div class="service">
-                    <div>
-                        <img src="./static/image/workEvn.jpg" alt="">
-                    </div>
-                    <div>
-                        <h1>提供服務</h1>
-                        <ol>
-                            <li>
-                                <p>協助測試電腦硬體問題及系統設置維護</p>
-                            </li>
-                            <li>
-                                <p>提供客戶協助零件配備升級</p>
-                            </li>
-                            <li>
-                                <p>客戶可提出電腦設備相關問題、無提供則按照標準流程純測試維護</p>
-                            </li>
-                            <li>
-                                <p>電腦全新主機安裝，可客製化零件規格及配合客戶需求組裝</p>
-                            </li>
-                            <li>
-                                <p>服務範圍：目前全省皆可配合，需事先私訊安排時間以利流程順利進行。車馬費用另計。</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="physicalstore">
-                    <div><img src="./static/image/map.png" alt=""></div>
-                    <div>
+                <article>
+                    <div class="service articleCenterMaxWidth">
                         <div>
-                        <h1>閃光豬電腦快修工作室</h1>
-                        <ul>
-                            <li><p>實體店面地點 : 澎湖縣馬公市六合路300號</p></li>
-                            <li><p>連絡電話 : 0934031102</p></li>
-                            <li><p>信箱 : bohau888@gmail.com</p></li>
-                            <li>
-                                <img src="./static/image/QRCODE.png" alt="">
-                            </li>
-                        </ul>                            
+                            <img src="./static/image/workEvn.jpg" alt="">
+                        </div>
+                        <div>
+                            <h1>提供服務</h1>
+                            <ol>
+                                <li>
+                                    <p>協助測試電腦硬體問題及系統設置維護</p>
+                                </li>
+                                <li>
+                                    <p>提供客戶協助零件配備升級</p>
+                                </li>
+                                <li>
+                                    <p>客戶可提出電腦設備相關問題、無提供則按照標準流程純測試維護</p>
+                                </li>
+                                <li>
+                                    <p>電腦全新主機安裝，可客製化零件規格及配合客戶需求組裝</p>
+                                </li>
+                                <li>
+                                    <p>服務範圍：目前全省皆可配合，需事先私訊安排時間以利流程順利進行。車馬費用另計。</p>
+                                </li>
+                            </ol>
                         </div>
                     </div>
+                </article>
+                <article>
+                    <div class="physicalstore articleCenterMaxWidth">
+                        <div><img src="./static/image/map.png" alt=""></div>
+                        <div>
+                            <div>
+                                <h1>閃光豬電腦快修工作室</h1>
+                                <ul>
+                                    <li>
+                                        <p>實體店面地點 : 澎湖縣馬公市六合路300號</p>
+                                    </li>
+                                    <li>
+                                        <p>連絡電話 : 0934031102</p>
+                                    </li>
+                                    <li>
+                                        <p>信箱 : bohau888@gmail.com</p>
+                                    </li>
+                                    <li>
+                                        <img src="./static/image/QRCODE.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="repair articleCenterMaxWidth">
+
+                        <div class="repairForm">
+                            <form @submit.prevent="sendEmail">
+                                <h1>線上報修申請</h1>
+                                <input type="text" placeholder="姓名" name="name">
+                                <input type="text" placeholder="聯絡方式" name="phone">
+                                <textarea placeholder="問題描述" name="message"></textarea>
+                                <input type="submit" value="送出">
+                            </form>
+                            <div class="instructions">
+                                <h2>說明 :</h2>
+                                <ul>
+                                    <li>
+                                        <p>所有報修機器會優先做測試再另報價，收件時不收取費用。</p>
+                                    </li>
+                                    <li>
+                                        <p>電腦送測檢修前請務必將重要資料備份，本工作室不負責資料保全。</p>
+                                    </li>
+                                    <li>
+                                        <p>本工作室安裝軟體授權不負授權責任，為保護您的權益，請支持正版系統。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="sendSuccess">
+                    <div class="notify success"></div>
                 </div>
-            </article>
-        </main>
-            <footer><p>© 2021 FlashPig.All rights reserved.</p></footer>
+            </main>
+            <footer>
+                <p>© 2021 FlashPig.All rights reserved.</p>
+            </footer>
         </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     <script>
-        // new Vue({el: "#app", data: {}})
+        new Vue({
+            el: "#app",
+            data: {
+                seendEmailDelay: false
+            },
+            methods: {
+                sendEmail(e) {
+                    if (!this.seendEmailDelay) {
+                        emailjs.sendForm('default_service', 'template_b9r49t1', e.target, 'user_RNeEhedPv8vkcIcx7pdxr').then((result) => {
+                            console.log('SUCCESS!', result.status, result.text);
+                            this.seendEmailDelay = true
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                        });
+                    }
+                    setTimeout(() => {
+                        this.seendEmailDelay = false
+                    }, 60000)
+                }
+            }
+        })
     </script>
-    <style>
-        main {
-            max-width: 1200px;
-            margin: auto;
-        }
-    </style>
 </html>

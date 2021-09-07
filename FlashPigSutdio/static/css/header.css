@@ -1,16 +1,11 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: DFKai-sb, Microsoft JhengHei, PMingLiU;
-}
-
 header {
   background: linear-gradient(45deg, #efc7ed, #f6eeb0);
+  box-shadow: 0 -5px 12px black;
 }
 .banner img {
+  display: block;
   width: 100%;
   max-width: 431px;
-  display: block;
-  margin: auto;
   padding: 2em 0;
+  margin: auto;
 }
